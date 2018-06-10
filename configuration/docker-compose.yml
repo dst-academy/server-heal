@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  heal:
+    image: "willfarrell/autoheal"
+    env_file:
+      - ./.env
+    volumes:
+      - ${DOCKER_SOCK}:${DOCKER_SOCK}
